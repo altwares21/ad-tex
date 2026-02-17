@@ -31,9 +31,9 @@ export default function Hero() {
         <div className="flex-1 flex justify-center">
           <div className="w-80 h-80 bg-linear-to-br from-ad-yellow to-ad-pink rounded-lg shadow-2xl flex items-center justify-center hover:shadow-3xl transition-all duration-300">
             <img
-              src="/src/assets/ad-tex.png"
-              alt="Ad-Tex Hero"
-              className="w-full h-full object-contain"
+              src="src/assets/ad-tex.png"
+              alt="Ad-Tex Logo"
+              className="object-contain"
             />
           </div>
         </div>

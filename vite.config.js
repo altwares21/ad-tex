@@ -4,5 +4,5 @@ import tailwindcss from 'tailwindcss'
 
 export default defineConfig({
   plugins: [react(), tailwindcss],
-  base: './', // Ensure relative paths for assets
+  base: '/ad-tex/',
 })

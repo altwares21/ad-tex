@@ -53,14 +53,22 @@ export default function About() {
             {[
               {
                 name: "Daniel Villanueva",
-                img: "/src/assets/team-placeholder.png",
+                img: "src/assets/daniel.jpeg",
+                role: "Data Analyst & Database Manager"
               },
               {
                 name: "Madelyn Cunil",
-                img: "/src/assets/team-placeholder.png",
+                img: "src/assets/madelyn.jpeg",
+                role: "Designer"
               },
-              { name: "Luis Mattu", img: "/src/assets/team-placeholder.png" },
-              { name: "Alvaro Chan", img: "/src/assets/team-placeholder.png" },
+              { name: "Luis Mattu", 
+                img: "src/assets/luis.png",
+                role: "Web Developer & Logistics"
+              },
+              { name: "Alvaro Chan", 
+                img: "src/assets/alvaro.jpg",
+                role: "Public Relations"
+               },
             ].map((member, idx) => (
               <div key={idx} className="text-center">
                 <img
@@ -69,7 +77,8 @@ export default function About() {
                   className="w-32 h-32 rounded-full object-cover mx-auto mb-4 shadow-lg"
                 />
                 <p className="text-lg font-semibold text-ad-purple">
-                  {member.name}
+                  {member.name}<br />
+                  <span className="text-sm text-gray-500">{member.role}</span>
                 </p>
               </div>
             ))}
