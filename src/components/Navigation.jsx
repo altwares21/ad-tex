@@ -1,6 +1,6 @@
 import { Link, useLocation } from "react-router-dom";
 import { useState } from "react";
-
+import logo from "../assets/ad-tex.png";
 export default function Navigation() {
   const location = useLocation();
   const [menuOpen, setMenuOpen] = useState(false);
@@ -16,7 +16,7 @@ export default function Navigation() {
         {/* Logo */}
         <Link to="/" className="flex items-center gap-3 hover:opacity-90 transition-opacity">
           <div className="bg-white rounded flex items-center justify-center w-10 h-10">
-            <img src="src/assets/ad-tex.png" alt="Ad-Tex Logo" className="h-8 object-contain" />
+            <img src={logo} alt="Ad-Tex Logo" className="h-8 object-contain" />
           </div>
           <div>
             <h1 className="text-xl font-bold">Ad-Tex</h1>

@@ -1,3 +1,8 @@
+import alvaro from "../assets/alvaro.jpg";
+import daniel from "../assets/daniel.jpeg";
+import luis from "../assets/luis.png";
+import madelyn from "../assets/madelyn.jpeg";
+
 export default function About() {
   return (
     <section className="py-20">
@@ -53,20 +58,20 @@ export default function About() {
             {[
               {
                 name: "Daniel Villanueva",
-                img: "src/assets/daniel.jpeg",
+                img: daniel,
                 role: "Data Analyst & Database Manager"
               },
               {
                 name: "Madelyn Cunil",
-                img: "src/assets/madelyn.jpeg",
+                img: madelyn,
                 role: "Designer"
               },
               { name: "Luis Mattu", 
-                img: "src/assets/luis.png",
+                img: luis,
                 role: "Web Developer & Logistics"
               },
               { name: "Alvaro Chan", 
-                img: "src/assets/alvaro.jpg",
+                img: alvaro,
                 role: "Public Relations"
                },
             ].map((member, idx) => (
